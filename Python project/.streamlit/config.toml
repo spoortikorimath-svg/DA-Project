@@ -1,0 +1,7 @@
+[theme]
+# ---- Change these hex codes to change the app's colors ----
+primaryColor = "#14B8A6"             # teal/emerald — buttons, sliders, active elements
+backgroundColor = "#0B1220"          # main page background (deep navy-black)
+secondaryBackgroundColor = "#111827" # sidebar + widget background
+textColor = "#E5E7EB"                # main text color (light gray)
+font = "sans serif"

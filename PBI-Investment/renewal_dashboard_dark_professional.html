@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renewal Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(160deg, #080b12, #0d1220 55%, #0a0e17);
+      color: #dbe2ef;
+    }
+    .header {
+      padding: 22px 30px;
+      background: linear-gradient(180deg, rgba(23,29,45,.95), rgba(15,20,33,.95));
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #f8fafc;
+      letter-spacing: .2px;
+    }
+    .header p {
+      margin: 6px 0 0;
+      color: #8b98ac;
+    }
+    .dashboard {
+      width: min(1400px, 96%);
+      margin: 24px auto;
+      background: linear-gradient(180deg, rgba(19,24,38,.95), rgba(12,16,26,.95));
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 20px 55px rgba(0,0,0,0.55);
+    }
+    .dashboard iframe {
+      display: block;
+      width: 100%;
+      height: calc(100vh - 145px);
+      min-height: 600px;
+      border: 0;
+      border-radius: 10px;
+      background: #0e1320;
+    }
+    @media (max-width: 700px) {
+      .header { padding: 18px; }
+      .header h1 { font-size: 22px; }
+      .dashboard { width: 100%; margin: 0; border-radius: 0; padding: 6px; }
+      .dashboard iframe { min-height: 600px; height: calc(100vh - 100px); }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Renewal Dashboard</h1>
+    <p>Interactive Power BI Renewal Analytics</p>
+  </header>
+
+  <main class="dashboard">
+    <iframe
+      title="Renewal Dashboard"
+      src="https://app.powerbi.com/view?r=eyJrIjoiMTgwYTMxZjQtMTc3Ny00NWE5LWEyODAtOWIzYmFkZjA3ZmZlIiwidCI6IjVmOTA5NjYwLWUxMDQtNDNkNC1hOGViLTA2YjNjNTkxYjBiMSJ9"
+      frameborder="0"
+      allowFullScreen="true">
+    </iframe>
+  </main>
+
+</body>
+</html>
