@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1730">
+  <title>My Power BI Dashboard</title>
+  <style>
+    :root {
+      --bg: #0a1730;          /* dark navy blue - change this one value to change the whole page */
+      --line: #1a3366;
+      --ink: #e8eefc;
+      --muted: #9fb0d6;
+      --accent: #5fa8ff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: var(--bg);
+    }
+
+    header, main, footer, .frame { background: var(--bg); }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 18px clamp(16px, 4vw, 40px);
+    }
+
+    header h1 {
+      font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+      font-weight: 600;
+    }
+
+    header p {
+      margin-top: 4px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    main {
+      flex: 1;
+      padding: clamp(8px, 2vw, 24px);
+      display: flex;
+    }
+
+    .frame {
+      flex: 1;
+      min-height: 75vh;
+      display: flex;
+    }
+
+    iframe {
+      flex: 1;
+      width: 100%;
+      min-height: 75vh;
+      border: 0;
+      background: var(--bg);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 14px clamp(16px, 4vw, 40px);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--accent); }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Power BI Dashboard</h1>
+    <p>Interactive report. Use the filters and visuals inside the dashboard to explore the data.</p>
+  </header>
+
+  <main>
+    <div class="frame">
+      <iframe
+        title="Power BI Dashboard"
+        src="https://app.powerbi.com/view?r=eyJrIjoiMmJkYWZjMGYtNmQ1Yi00MTQxLTk4MmItNmY5YmRlYjgzMDVjIiwidCI6IjVmOTA5NjYwLWUxMDQtNDNkNC1hOGViLTA2YjNjNTkxYjBiMSJ9"
+        allowfullscreen="true"
+        loading="lazy">
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    Dashboard not loading?
+    <a href="https://app.powerbi.com/view?r=eyJrIjoiMmJkYWZjMGYtNmQ1Yi00MTQxLTk4MmItNmY5YmRlYjgzMDVjIiwidCI6IjVmOTA5NjYwLWUxMDQtNDNkNC1hOGViLTA2YjNjNTkxYjBiMSJ9" target="_blank" rel="noopener">Open it in a new tab</a>.
+  </footer>
+
+</body>
+</html>
